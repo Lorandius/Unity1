@@ -1,0 +1,39 @@
+
+    /*void RecalculateMesh()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+
+
+            _defMesh[i].vertices = _modifiedVerts;
+            transform.GetChild(i).gameObject.GetComponentInChildren<MeshFilter>().sharedMesh = _defMesh[i];
+            _defMesh[i].RecalculateNormals();
+        }
+    }
+
+   /* private void DefMesh()
+    {
+        Debug.Log(transform.GetChild(0).name);
+        _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(_ray, out _hit, Mathf.Infinity))
+        {
+            for (int v = 0; v < _modifiedVerts.Length; v++)
+            {
+                Vector3 distance = _modifiedVerts[v] - _hit.point;
+                float force = defStrenght / (1f + _hit.point.sqrMagnitude);
+                if (distance.sqrMagnitude < radius)
+                {
+                    if (Input.GetMouseButton(0))
+                    {
+                        _modifiedVerts[v] = _modifiedVerts[v] + (Vector3.up * force) / smothingFactor;
+                        
+                    }else if (Input.GetMouseButton(1))
+                    {
+                        _modifiedVerts[v] = _modifiedVerts[v] + (Vector3.down * force) / smothingFactor;
+                    }
+                }
+            }
+        }
+        RecalculateMesh();
+    }
+    */
