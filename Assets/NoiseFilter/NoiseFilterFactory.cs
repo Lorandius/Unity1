@@ -18,6 +18,8 @@ public  static class NoiseFilterFactory
                 return new MyNoiseFilter(settings.myNoiseSettings);
             case NoiseSettings.FilterType.MyCos:
                 return new MyCosNoiseFilter(settings.myCosNoiseSettings);
+            case NoiseSettings.FilterType.Cool:
+                return new CoolNoiseFilter(settings.coolNoiseSettings);
         }
 
         return new SimpleNoiseFilter(settings.simpleNoiseSettings);

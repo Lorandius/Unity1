@@ -6,7 +6,7 @@ using UnityEngine;
 public class NoiseSettings {
     public enum FilterType
     {
-        Simple, Rigid, My, MyCos
+        Simple, Rigid, My, MyCos, Cool
     }
     public FilterType filterType;
     [ConditionalHide("filterType", 0)]
@@ -17,6 +17,8 @@ public class NoiseSettings {
     public MyNoiseSettings myNoiseSettings;
     [ConditionalHide("filterType", 3)]
     public MyCosNoiseSettings myCosNoiseSettings;
+    [ConditionalHide("filterType", 4)]
+    public CoolNoiseSettings coolNoiseSettings;
     [System.Serializable]
     public class SimpleNoiseSettings
     {
@@ -43,6 +45,11 @@ public class NoiseSettings {
     }
     [System.Serializable]
     public class MyCosNoiseSettings : SimpleNoiseSettings
+    {
+        
+    }
+    [System.Serializable]
+    public class CoolNoiseSettings : SimpleNoiseSettings
     {
         
     }
